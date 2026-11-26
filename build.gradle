@@ -1,0 +1,16 @@
+plugins { id 'com.android.application' version '8.7.3' }
+android {
+    namespace 'ru.aurora.launcher'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'ru.aurora.launcher'
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+    sourceSets { main {
+        manifest.srcFile 'src/AndroidManifest.xml'
+        java.srcDirs = ['src']
+    } }
+}
